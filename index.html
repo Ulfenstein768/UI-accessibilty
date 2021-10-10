@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Design - UI Accessibility</title>
+</head>
+<body>
+    <header aria-level="1">
+        <h1 role="h1">Ítalía Restaurant Reservation Form</h1>
+        <h2 role="h2">Form for reservation</h2>
+    </header> 
+    <main>
+        <form role="form" action="index.html" method="post">
+            <label for="name"  >Name</label><br>
+                <input id="name" type="text" aria-level="2"><br>
+
+            <label for="email"  >Email</label><br>
+                <input id="email" type="text" aria-level="2"><br>   
+
+            <label for="phone">Phone</label><br>
+                <input id="phone" type="text" aria-level="2"><br> 
+
+            <label for="requests">Any special requests</label><br>
+                <input id="requests" type="text" aria-level="2"><br>
+
+            <label for="timeOfDate">Time to Reserve</label> <br>
+                <input id ="timeOfDate" type="text"  aria-level="2"><br><br>
+
+                <input type="submit" value="Book now" role="button" aria-level="2">
+        </form>
+    </main>
+
+</body>
+</html>
